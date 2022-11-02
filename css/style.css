@@ -1,0 +1,122 @@
+:root{
+    --vermelho: #c90909;
+    --preto: #010500; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header .container{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+header .logo a{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Lucida Sans Unicode';
+    font-size: 40px;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    background-position: center;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+
+.title{
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15%;
+}
+
+.descricao{
+    max-width: 500px;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: 1px solid white;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    width: 180px;
+}
+
+.botao:hover{
+    border: 1px solid var(--preto);
+    box-sizing: border-box;
+    background-color: white;
+    color: var(--preto);
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.filme-principal{
+    border: 1px solid white;
+}
+
+.filme-principal .container{
+    width: 80%;    
+}
+
+.box-filme{
+    margin-top: 5px;
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.box-filme:hover{
+    opacity: 0.4;
+}
+
